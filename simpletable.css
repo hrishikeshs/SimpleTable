@@ -1,0 +1,10 @@
+.table-row {
+  text-align: justify;
+  text-indent: 5px;
+  background-color: #fff;
+  font-family: helvetica;
+}
+
+.table-row:hover {
+  background: #f5f9fc;
+}
