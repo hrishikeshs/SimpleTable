@@ -6,6 +6,9 @@ A reusable table using ember.
 Simpletable lets you display an html table if your underlying data is backed by an Array.
 
 usage:
+(Replace 'App' which is a generic name I used in simpletable.handlebars and in simpletable.js to whatever your app's name is.)
+
+To use this in a template backed by an arrayController:
 
 `{{view App.SimpleTableView}}`
 
