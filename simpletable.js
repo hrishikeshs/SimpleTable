@@ -1,6 +1,6 @@
 (function(namespace) {
   namespace.RowView = Ember.View.extend({
-  classNames: ['mainpage-table-row'],
+  classNames: ['table-row'],
   defaultTemplate: Ember.Handlebars.compile('<tr>{{#each property in view.contentProxy}}<td>{{property}}</td>{{/each}}<tr>'),
   contentProxy: function() {
     var content = this.get('content'),
@@ -17,7 +17,7 @@
 
   namespace.SimpleTableView = Ember.View.extend({
     tagName: 'table',
-    classNames: ['mainpage-table'],
+    classNames: ['table'],
     templateName: 'simpletable'
   });
 
@@ -43,7 +43,7 @@
   namespace.TableHeaderView = Ember.View.extend({
     tagName: 'thead',
     contentBinding: 'controller.headers',
-    classNames: ['mainpage-table-row'],
+    classNames: ['table-row'],
     defaultTemplate: Ember.Handlebars.compile('{{#each header in view.content}}<th>{{header}}</th>{{/each}}')
   });
 }(App));
