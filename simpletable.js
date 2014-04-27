@@ -1,7 +1,7 @@
 (function(namespace) {
   namespace.RowView = Ember.View.extend({
   classNames: ['table-row'],
-  defaultTemplate: Ember.Handlebars.compile('<tr>{{#each property in view.contentProxy}}<td>{{property}}</td>{{/each}}<tr>'),
+  defaultTemplate: Ember.Handlebars.compile('<tr class="table-row">{{#each property in view.contentProxy}}<td>{{property}}</td>{{/each}}<tr>'),
   contentProxy: function() {
     var content = this.get('content'),
       keys = Ember.keys(content),
