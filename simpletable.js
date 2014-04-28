@@ -1,18 +1,14 @@
 (function(namespace) {
   namespace.RowView = Ember.View.extend({
   classNames: ['table-row'],
-  defaultTemplate: Ember.Handlebars.compile('<tr class="table-row">{{#each property in view.contentProxy}}<td>{{property}}</td>{{/each}}<tr>'),
-  contentProxy: function() {
+  defaultTemplate: Ember.Handlebars.compile('<tr class="table-row">{{#each cellValue in view.cellValues}}<td>{{cellValue}}</td>{{/each}}<tr>'),
+  cellValues: function() {
     var content = this.get('content'),
-      keys = Ember.keys(content),
-      array = [];
-
-      keys.forEach(function(key) {
-        array.push([content[key]]);
+      keys = Ember.keys(content);
+      return keys.map(function(key) {
+        return [content[key]];
       });
-      return array;
     }.property('content')
-
   });
 
   namespace.SimpleTableView = Ember.View.extend({
