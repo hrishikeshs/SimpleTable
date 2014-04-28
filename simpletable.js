@@ -1,3 +1,10 @@
+/**
+* @author: Hrishikesh S
+* @copyright: Copyright © 2014 Hrishikesh S. All rights reserved.
+* @license: Licensed under MIT License
+*/
+
+
 (function(namespace) {
   namespace.RowView = Ember.View.extend({
   classNames: ['table-row'],
