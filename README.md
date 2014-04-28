@@ -20,3 +20,11 @@ For more customization to format your rows in various different ways, you may sp
 example of this would be: `{{view App.SimpleTableView rowView='CollectionsTableRow'}}` assuming your customized rowview is called  `App.CollectionsTableRowView`
 
 Ember does not currently support itemControllers to be associated with CollectionViews. So in order to do more powerful things, you will need to create and destroy your own controllers in your "rowViews". Hopefully, once the support arrives, it can be baked into SimpleTable.
+
+License
+========
+Copyright © 2014 Hrishikesh S
+
+SimpleTable is licensed under the <a href="http://www.opensource.org/licenses/MIT">MIT License</a>.
+
+
