@@ -47,6 +47,6 @@
     tagName: 'thead',
     contentBinding: 'controller.headers',
     classNames: ['table-row'],
-    defaultTemplate: Ember.Handlebars.compile('{{#each header in view.content}}<th>{{header}}</th>{{/each}}')
+    defaultTemplate: Ember.Handlebars.compile('<tr>{{#each header in view.content}}<th>{{header}}</th>{{/each}}</tr>')
   });
 }(App));
