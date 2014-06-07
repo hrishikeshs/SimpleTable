@@ -23,7 +23,15 @@ headers: <list of strings>
 For more customization to format your rows in various different ways, you may specify your "rowView" as a parameter:
 example of this would be: `{{view App.SimpleTableView rowView='CollectionsTableRow'}}` assuming your customized rowview is called  `App.CollectionsTableRowView`
 
-example json which simpletable expects:
+Example:
+
+Given this array of headers:
+
+```
+headers: ['Lord', 'House', 'Seat']
+
+```
+and this content:
 
 ```
  content: [
@@ -40,11 +48,41 @@ example json which simpletable expects:
      {
         'name'  : 'Robert Baratheon',
         'house' : 'Baratheon',
-        'location' : 'King's Landing',
+        'location' : "King's Landing",
+     },
+     {
+        'name'  : 'Stannis Baratheon',
+        'house' : 'Baratheon',
+        'location' : "DragonStone",
+     },
+     {
+        'name'  : 'Prince Oberyn',
+        'house' : 'Dorne',
+        'location' : "Dorne",
+     },
+     {
+        'name'  : 'Mace Tyrell',
+        'house' : 'Tyrell',
+        'location' : "HighGarden",
+     },
+     {
+        'name'  : 'Balon Greyjoy',
+        'house' : 'Greyjoy',
+        'location' : "Iron Islands",
+     },
+     {
+        'name'  : 'Walder Frey',
+        'house' : 'Frey',
+        'location' : "The Neck",
      }
- ]
+
+ ],
 
 ```
+Simpletable will draw a table that looks like:
+
+![screenshot](https://raw.githubusercontent.com/hrishikeshs/SimpleTable/master/table.png "screenshot")
+
 
 Ember does not currently support itemControllers to be associated with CollectionViews. So in order to do more powerful things, you will need to create and destroy your own controllers in your "rowViews". Hopefully, once the support arrives, it can be baked into SimpleTable.
 
