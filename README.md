@@ -43,37 +43,37 @@ and this content:
      {
        'name' : 'Tyrion Lannister',
        'house': 'Lannister',
-       'location' : 'Casterly Rock',
+       'location' : 'Casterly Rock'
      },
      {
         'name'  : 'Robert Baratheon',
         'house' : 'Baratheon',
-        'location' : "King's Landing",
+        'location' : "King's Landing"
      },
      {
         'name'  : 'Stannis Baratheon',
         'house' : 'Baratheon',
-        'location' : "DragonStone",
+        'location' : "DragonStone"
      },
      {
         'name'  : 'Prince Oberyn',
         'house' : 'Dorne',
-        'location' : "Dorne",
+        'location' : "Dorne"
      },
      {
         'name'  : 'Mace Tyrell',
         'house' : 'Tyrell',
-        'location' : "HighGarden",
+        'location' : "HighGarden"
      },
      {
         'name'  : 'Balon Greyjoy',
         'house' : 'Greyjoy',
-        'location' : "Iron Islands",
+        'location' : "Iron Islands"
      },
      {
         'name'  : 'Walder Frey',
         'house' : 'Frey',
-        'location' : "The Neck",
+        'location' : "The Neck"
      }
 
  ],
